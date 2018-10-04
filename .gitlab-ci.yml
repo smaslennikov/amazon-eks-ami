@@ -1,0 +1,16 @@
+image: alpine:latest
+variables:
+  AWS_ACCESS_KEY_ID: AKIAIERO26RY3JEQ6ICA
+
+stages:
+  - build-eks-ami
+
+before_script:
+  - apk update && apk add packer
+
+build-eks-ami:
+  stage: build-eks-ami
+  script:
+    - make all
+  only:
+    - master
