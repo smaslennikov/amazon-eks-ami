@@ -11,7 +11,8 @@ stages:
 build-eks-ami:
   stage: build-eks-ami
   script:
-    - apk update && apk add make aws-cli
+    - apk update && apk add make py-pip
+    - pip install awscli >/dev/null
     - make all
   only:
     - master
