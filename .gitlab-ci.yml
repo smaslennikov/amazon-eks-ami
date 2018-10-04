@@ -1,4 +1,7 @@
-image: alpine:latest
+image:
+  name: hashicorp/packer:latest
+  entrypoint: [""]
+
 variables:
   AWS_ACCESS_KEY_ID: AKIAIERO26RY3JEQ6ICA
 
