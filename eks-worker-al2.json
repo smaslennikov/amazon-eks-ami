@@ -8,7 +8,7 @@
     "creator": "{{env `USER`}}",
     "instance_type": "m4.large",
     "source_ami_id": "",
-    "encrypted": "false",
+    "encrypted": "true",
     "kms_key_id": ""
   },
 
