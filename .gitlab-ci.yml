@@ -8,9 +8,6 @@ variables:
 stages:
   - build-eks-ami
 
-before_script:
-  - apk update && apk add packer
-
 build-eks-ami:
   stage: build-eks-ami
   script:
