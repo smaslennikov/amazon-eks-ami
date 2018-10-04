@@ -6,6 +6,7 @@ DATE ?= $(shell date +%Y-%m-%d)
 # * use the us-west-2 minimal hvm image
 # https://aws.amazon.com/amazon-linux-2/release-notes/
 SOURCE_AMI_ID ?= $(shell aws ec2 describe-images \
+	--region us-west-2 \
 	--output text \
 	--filters \
 		Name=owner-id,Values=137112412989 \
