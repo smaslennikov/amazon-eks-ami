@@ -11,7 +11,7 @@ stages:
 build-eks-ami:
   stage: build-eks-ami
   script:
-    - apk update && apk add make
+    - apk update && apk add make aws-cli
     - make all
   only:
     - master
