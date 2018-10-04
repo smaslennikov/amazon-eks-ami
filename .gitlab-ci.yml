@@ -11,6 +11,7 @@ stages:
 build-eks-ami:
   stage: build-eks-ami
   script:
+    - apk update && apk add make
     - make all
   only:
     - master
